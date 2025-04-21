@@ -449,20 +449,20 @@
                         let minTime, maxTime;
                         switch (difficulty) {
                             case 'easy':
-                                minTime = 40;
-                                maxTime = 55;
+                                minTime = 30;
+                                maxTime = 45;
                                 break;
                             case 'medium':
-                                minTime = 55;
-                                maxTime = 80;
+                                minTime = 45;
+                                maxTime = 65;
                                 break;
                             case 'hard':
-                                minTime = 80;
+                                minTime = 85;
                                 maxTime = 100;
                                 break;
                             default:
-                                minTime = 55;
-                                maxTime = 80;
+                                minTime = 45;
+                                maxTime = 65;
                         }
                         const timeRange = maxTime - minTime;
                         house.computerTime = Math.floor(Math.random() * (timeRange + 1)) + minTime;
