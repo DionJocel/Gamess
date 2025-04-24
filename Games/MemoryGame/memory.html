@@ -580,6 +580,99 @@
             text-shadow: 3px 3px 4px rgb(0, 0, 0);
             text-align: right;
         }
+        @media only screen and (max-width: 768px) {
+            .main-body {
+                height: 170dvh;
+                background-size: cover;
+                background-repeat: repeat;
+            }
+
+            .title {
+                margin: 15dvh 5dvh;
+                width: 90%;
+            }
+
+            .title h1 {
+                font-size: 5dvh;
+                text-align: center;
+            }
+
+            .title h2 {
+                font-size: 2.5dvh;
+                text-align: center;
+                display: block;
+                width: 100%;
+                margin-bottom: -15dvh;
+            }
+
+            .instruction-box {
+                top: 4dvh;
+                right: 25%;
+                transform: translateX(50%);
+            }
+
+            .instruction-btn {
+                width: 30dvh;
+                height: 7dvh;
+                font-size: 2.5dvh;
+            }
+
+            .difficulty-selector {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                padding: 20px 0;
+                margin-top: 1dvh;
+            }
+
+            .difficulty-selector h2 {
+                text-align: center;
+            }
+
+            .difficulty-selector p {
+                text-align: center;
+            }
+
+            .options {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .houses {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1dvh;
+                justify-self: center;
+            }
+
+            .house-img {
+                width: 25dvh;
+                height: 25dvh;
+            }
+
+            #confirmbox {
+                width: 90%;
+                height: auto;
+                padding: 20px;
+            }
+
+            #confirmbox h1 {
+                font-size: 4dvh;
+                padding-top: 3dvh;
+                margin-bottom: 5dvh;
+            }
+
+            #confirmbox h2 {
+                font-size: 3dvh;
+                padding-left: 3dvh;
+            }
+
+            .buttoncon {
+                bottom: -5dvh;
+                padding-bottom: 3dvh;
+            }
+        }
     </style>
 </head>
 
