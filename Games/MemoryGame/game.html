@@ -104,7 +104,7 @@
 
         .card {
             position: relative;
-            width: 15dvh;
+            width: 12dvh;
             height: 20dvh;
             transform-style: preserve-3d;
             transition: transform 0.5s ease;
@@ -360,6 +360,118 @@
         .buttons button:active {
             transform: translateY(0) scale(0.98);
         }
+        @media only screen and (max-width: 768px) {
+    .main-body {
+        background-position: top center;
+    }
+
+    .return {
+        width: 120px;
+        height: 35px;
+        font-size: 0.9rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    .scoreboard {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .left-panel {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .timer-container {
+        padding: 10px;
+    }
+
+    .timer {
+        font-size: 1.8rem;
+    }
+
+    .houses-container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .houses-container h2 {
+        font-size: 2.5dvh;
+    }
+
+    .house {
+        width: 7dvh;
+        height: 7dvh;
+        margin-bottom: 10px;
+    }
+
+    .house-progress {
+        width: calc(100% - 12dvh);
+        height: 3dvh;
+        margin-bottom: 5dvh;
+        transform: translateY(3dvh);
+        left: 12dvh;
+    }
+
+    .house-name {
+        font-size: 2dvh;
+        padding-left: 1dvh;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 2dvh;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 12dvh;
+        height: 16dvh;
+    }
+
+    .rankings-container {
+        width: 90%;
+        padding: 15px;
+        font-size: 2dvh;
+    }
+
+    .ranking-house-image {
+        width: 15dvh;
+        height: 10dvh;
+    }
+
+    .trophy-icon {
+        width: 10dvh;
+        height: 10dvh;
+    }
+
+    .buttons button {
+        width: 12dvh;
+        height: 6dvh;
+        font-size: 1.5dvh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .game {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        width: 10dvh;
+        height: 14dvh;
+    }
+
+    .house-progress {
+        width: calc(100% - 10dvh);
+        left: 10dvh;
+    }
+}
     </style>
 
     <head>
